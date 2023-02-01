@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Oswald:wght@200;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Orbitron:wght@400;500;600;700&family=Oswald:wght@200;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font-family: Orbitron;
+    margin: 40px 70px;
+}
+
+/* Navbar Section */
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-container>div>img{
+    height: 45px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 500px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px ;
+}
+
+.list :first-child{
+    font-size: 21px;
+    font-weight: 900;
+}
+
+/* Line after Home */
+ nav div ul li:first-of-type::after{
+    content: "";
+    background-color: #000000;
+    height: 2.5px;
+    width: 52px;
+    position: absolute;
+    top: 12.8%;
+    right: 65.7%;
+}
+
+/* Button section*/
+.button-group{
+    display: flex;  
+    padding-left: 10px;
+}
+
+.nav-button{
+    color: #515151;
+    background-color: #ffffff;
+    border: 2.6px solid #000;
+    border-radius: 12px;
+    width: 150px;
+    height: 35px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+svg{
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 7px;
+}
+
+/* Hero Section */
+
+.hero-container{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.square, .star, .globe {
+    position: absolute;
+}
+
+.globe {
+    left:55%;
+    top: 19%;
+}
+
+.globe > img {
+    width: 55px;
+}
+
+.star {
+    right: 10%;
+    top: 26%;
+}
+
+.star > img {
+    width: 55px;
+}
+
+.square {
+    bottom: -10px;
+    left : 14%
+}
+
+.square > img {
+    width: 300px;
+}
+
+.hero-container > div:first-of-type> img {
+    width: 370px;
+    position: absolute;
+    bottom: 6%;
+}
+
+.hero-container > div:first-of-type{
+    width: 90%;
+}
+
+.hero-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hero-heading {
+    font-size: 50px;
+}
+
+.hero-description {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align:center;
+    font-size: 15px;
+    font-family: Poppins;
+    color: #5C5C5C;
+}
+
+.button-email {
+    font-family: Orbitron;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1.5px solid ;
+    background: none;
+    margin-right: 10px;
+}
+
+.button-join {
+    font-family: Orbitron;
+    width: 120px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #ffffff
+}
+
+.contact-heading {
+    margin-top: 70px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icons > span {
+    margin-right: 10px;
+}
